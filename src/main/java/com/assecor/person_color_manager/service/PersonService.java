@@ -26,7 +26,7 @@ public class PersonService implements IPersonService {
     }
 
     @PostConstruct
-    private void loadCsvData() {
+    public void loadCsvData() {
 
         try (BufferedReader br = new BufferedReader(new FileReader("src/main/java/com/assecor/person_color_manager/sample-input.csv"))) {
             String line;
